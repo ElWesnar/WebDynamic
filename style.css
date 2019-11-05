@@ -1,0 +1,304 @@
+.Actor img{
+    width: 150px;
+    overflow: hidden;
+}
+.Actor{
+    display: block;
+    margin: unset;
+    max-width: 150px;
+}
+
+.pres{
+border: 2px solid black;
+    position: fixed;
+    display: block;
+    width: 600px;
+    height: 470px;
+    right: 20px;
+    top:100px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+
+}
+figure{
+    display: flex;
+    flex-flow: column;
+}
+.aside{
+    height: 235px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    width: 375px;
+}
+.aside2{
+    height: 235px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    padding-top: 235px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    width: 600px;
+}
+
+nav {
+    border-bottom: 1px solid black;
+}
+#menu-deroulant, #menu-deroulant ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+#menu-deroulant {
+    font-size: 1.75rem;
+}
+#menu-deroulant li {
+    /* on place les liens du menu horizontalement */
+    display: inline-block;
+}
+#menu-deroulant ul li {
+    /* on enlève ce comportement pour les liens du sous menu */
+    display: inherit;
+}
+/*#menu-deroulant */
+a{
+
+    text-decoration: none;
+    display: block;
+    color:#000;
+}
+#menu-deroulant ul {
+    background-color: #222222;
+    color: #f76f4f;
+    position: absolute;
+    /* on cache les sous menus complètement sur la gauche */
+    left: -999em;
+    text-align: left;
+    z-index: 1000;
+}
+#menu-deroulant li:hover ul {
+    /* Au survol des li du menu on replace les sous menus */
+    left: auto;
+    transition: left 0.8s ease-in-out;
+}
+
+
+meter::-webkit-meter-bar {
+    background: #666;
+    -webkit-box-shadow: inset 0 0 2px 2px #555;
+    -moz-box-shadow: inset 0 0 2px 2px #555;
+    box-shadow: inset 0 0 2px 2px #555;
+}
+
+meter::-webkit-meter-bar,
+meter::-webkit-meter-optimum-value,
+meter::-webkit-meter-suboptimum-value,
+meter::-webkit-meter-even-less-good-value {
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #4fa2f7;
+    border: 1px solid #1560ad;
+}
+
+meter::-webkit-meter-suboptimum-value {
+    background: #f7c64f;
+    border: 1px solid #b9870d;
+}
+
+meter::-webkit-meter-even-less-good-value {
+    background: #f76f4f;
+    border: 1px solid #bd3413;
+}​
+a:link{
+    text-decoration: none;
+     color: #333333;
+ }
+ .Note{
+     display: block;
+     padding: 0;
+     margin: 0;
+ }
+ footer{
+     position: absolute;
+     display: inline-block;
+     bottom: 0;
+     text-align: center;
+     left:0;
+     right: 0;
+ }
+ .Infos{
+     width: 60%;
+ }
+
+ h1{
+     font-size:24px;
+ }
+
+ .filmographie{
+     margin: 10px;
+     padding: 10px;
+
+ }
+.filmographie td {
+    border: 1px solid #333;
+}
+
+thead{
+    background-color: #333;
+    color: #fff;
+}
+.asided{
+    height: 235px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: 80px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 0px;
+    width: 375px;
+}
+.synop{
+    width: inherit;
+    font-size:18px;
+}
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait */
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: portrait) {
+
+    .asided{
+        border: none;
+        height: auto;
+        overflow: hidden;
+        position: relative;
+        width: 80%;
+    }
+    .aside{
+        height: auto;
+        width: 80%;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+    }
+    .aside2{
+        width: 80%;
+        padding-top: 0;
+        height: auto;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .pres{
+        border:none;
+        position: relative;
+    }
+    figcaption{
+        width: 78%;
+    }
+    .Actor img{
+        width: 80%;
+    }
+    .Actor{
+        max-width:none;
+    }
+
+
+}
+
+/* Landscape */
+
+@media only screen
+
+and (min-device-width: 375px)
+
+and (max-device-width: 667px)
+
+and (-webkit-min-device-pixel-ratio: 2)
+
+and (orientation: landscape) {
+
+
+    .asided{
+        height: 235px;
+        overflow: hidden;
+        position: relative;
+        width: 375px;
+    }
+
+}
+
+/* ----------- Google Pixel ----------- */
+
+/* Portrait */
+
+@media screen
+
+and (device-width: 360px)
+
+and (device-height: 640px)
+
+and (-webkit-device-pixel-ratio: 3)
+
+and (orientation: portrait) {
+
+    .asided{
+        height: 235px;
+        overflow: hidden;
+        position: relative;
+        width: 375px;
+    }
+
+}
+
+/* Landscape */
+
+@media screen
+
+and (device-width: 360px)
+
+and (device-height: 640px)
+
+and (-webkit-device-pixel-ratio: 3)
+
+and (orientation: landscape) {
+
+    .asided{
+        height: 235px;
+        overflow: hidden;
+        position: relative;
+        width: 375px;
+    }
+
+
+}
