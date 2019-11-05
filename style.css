@@ -79,8 +79,8 @@ a{
     color:#000;
 }
 #menu-deroulant ul {
-    background-color: #222222;
-    color: #f76f4f;
+    background-color: #ffffff;
+    color: #333333;
     position: absolute;
     /* on cache les sous menus complètement sur la gauche */
     left: -999em;
@@ -198,11 +198,11 @@ and (orientation: portrait) {
         height: auto;
         overflow: hidden;
         position: relative;
-        width: 80%;
+        width: 80vw;
     }
     .aside{
         height: auto;
-        width: 80%;
+        width: 80vw;
         border: none;
         overflow: hidden;
         position: relative;
@@ -210,7 +210,7 @@ and (orientation: portrait) {
         flex-direction:column;
     }
     .aside2{
-        width: 80%;
+        width: 80vw;
         padding-top: 0;
         height: auto;
         border: none;
@@ -224,10 +224,10 @@ and (orientation: portrait) {
         position: relative;
     }
     figcaption{
-        width: 78%;
+        width: 78vw;
     }
     .Actor img{
-        width: 80%;
+        width: 80vw;
     }
     .Actor{
         max-width:none;
@@ -250,10 +250,43 @@ and (orientation: landscape) {
 
 
     .asided{
-        height: 235px;
+        border: none;
+        height: auto;
         overflow: hidden;
         position: relative;
-        width: 375px;
+        width: 80vw;
+    }
+    .aside{
+        height: auto;
+        width: 80vw;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+    }
+    .aside2{
+        width: 80vw;
+        padding-top: 0;
+        height: auto;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .pres{
+        border:none;
+        position: relative;
+    }
+    figcaption{
+        width: 78vw;
+    }
+    .Actor img{
+        width: 80vw;
+    }
+    .Actor{
+        max-width:none;
     }
 
 }
@@ -273,12 +306,44 @@ and (-webkit-device-pixel-ratio: 3)
 and (orientation: portrait) {
 
     .asided{
-        height: 235px;
+        border: none;
+        height: auto;
         overflow: hidden;
         position: relative;
-        width: 375px;
+        width: 80vw;
     }
-
+    .aside{
+        height: auto;
+        width: 80vw;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+    }
+    .aside2{
+        width: 80vw;
+        padding-top: 0;
+        height: auto;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .pres{
+        border:none;
+        position: relative;
+    }
+    figcaption{
+        width: 78vw;
+    }
+    .Actor img{
+        width: 80vw;
+    }
+    .Actor{
+        max-width:none;
+    }
 }
 
 /* Landscape */
@@ -294,10 +359,43 @@ and (-webkit-device-pixel-ratio: 3)
 and (orientation: landscape) {
 
     .asided{
-        height: 235px;
+        border: none;
+        height: auto;
         overflow: hidden;
         position: relative;
-        width: 375px;
+        width: 80vw;
+    }
+    .aside{
+        height: auto;
+        width: 80vw;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction:column;
+    }
+    .aside2{
+        width: 80vw;
+        padding-top: 0;
+        height: auto;
+        border: none;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    .pres{
+        border:none;
+        position: relative;
+    }
+    figcaption{
+        width: 78vw;
+    }
+    .Actor img{
+        width: 80vw;
+    }
+    .Actor{
+        max-width:none;
     }
 
 
