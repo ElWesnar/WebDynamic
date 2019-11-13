@@ -5,6 +5,12 @@ function getBlock($file, $data = [])
     require $file;
 }
 
+$bdd = new PDO('mysql:host=mysql-gaiteur-septheure.alwaysdata.net;dbname=gaiteur-septheure_cineplousse_;charset=utf8', '192216', 'chzPMabr');
+
+
+$reponse = $bdd->query('SELECT * FROM movie');
+$data = $reponse->fetchAll();
+echo $data;
 
 echo "<!DOCTYPE html>
 <html lang=\"en\">
