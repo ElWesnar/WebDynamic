@@ -1,4 +1,10 @@
 <?php
+
+function getBlock($file, $data = [])
+{
+    require $file;
+}
+
 echo "<!DOCTYPE html>
 <html lang=\"en\">
 <head>
@@ -8,9 +14,13 @@ echo "<!DOCTYPE html>
     <link rel=\"stylesheet\" href=\"style.css\">
 </head>
 <body>";
-include 'php/infosDirector.php';
-include 'php/filmographie.php';
-include 'php/presD.php';
+
+getBlock(php/infosDirector.php);
+getBlock(php/filmographie.php);
+getBlock(php/presD.php);
+//include 'php/infosDirector.php';
+//include 'php/filmographie.php';
+//include 'php/presD.php';
 
 
 
