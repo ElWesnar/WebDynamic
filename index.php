@@ -15,10 +15,10 @@ echo "<!DOCTYPE html>
     <link rel=\"stylesheet\" href=\"style.css\">
 </head>
 <body>";
-getBlock(php/header.php);
-getBlock(php/infos.php);
-getBlock(php/img.php);
-getBlock(php/footer.php);
+getBlock("php/header.php");
+getBlock("php/infos.php");
+getBlock("php/img.php");
+getBlock("php/footer.php");
 //include 'php/header.php';
 //include 'php/infos.php';
 //include 'php/img.php';

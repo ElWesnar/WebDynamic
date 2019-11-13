@@ -15,9 +15,9 @@ echo "<!DOCTYPE html>
 </head>
 <body>";
 
-getBlock(php/infosDirector.php);
-getBlock(php/filmographie.php);
-getBlock(php/presD.php);
+getBlock("php/infosDirector.php");
+getBlock("php/filmographie.php");
+getBlock("php/presD.php");
 //include 'php/infosDirector.php';
 //include 'php/filmographie.php';
 //include 'php/presD.php';
