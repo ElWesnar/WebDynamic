@@ -10,7 +10,7 @@ $bdd = new PDO('mysql:host=mysql-gaiteur-septheure.alwaysdata.net;dbname=gaiteur
 
 $reponse = $bdd->query('SELECT * FROM movie');
 $data = $reponse->fetchAll();
-echo $data;
+print_r($data);
 
 echo "<!DOCTYPE html>
 <html lang=\"en\">
