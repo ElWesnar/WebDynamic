@@ -12,4 +12,9 @@ foreach ($data as $key => $value) {
 //        $maladie[] = $element;
     }
 }
+
+$reponse1 = $bdd->query('SELECT pe.lastname, pe.firstname, pe.birthdate, pe.biography FROM person pe
+JOIN movieHasPerson ON movieHasPerson.idPerson = pe.id  AND movieHasPerson.idMovie = 1;');
+$maladie1 = array();
+$data1 = $reponse1->fetchAll();
 ?>
